@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://dm6elj1fdwwrs"]
+
+[ext_resource type="Script" uid="uid://vohh0nwxr5qs" path="res://Scripts/main.gd" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b5kgonjxeqaqi" path="res://scenes/bg.tscn" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cg8jw37wncque" path="res://scenes/static_body_2d.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b0ovcr6iagjeb" path="res://scenes/character_body_2d.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://iq0hit8uwojc" path="res://scenes/gameover.tscn" id="6_tefeu"]
+[ext_resource type="AudioStream" uid="uid://df7rk5j4g30be" path="res://sound/transmission.ogg" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://bwqdoubepkmme" path="res://scenes/hud.tscn" id="8_tipki"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_1bvp3")
+
+[node name="Bg" parent="." instance=ExtResource("1_h2yge")]
+
+[node name="Ground" parent="." instance=ExtResource("2_1bvp3")]
+
+[node name="Dino" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(88, 528)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="HUD" parent="." instance=ExtResource("8_tipki")]
+
+[node name="GameOver" parent="." instance=ExtResource("6_tefeu")]
+process_mode = 2
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_o6xl0")
+bus = &"Music"

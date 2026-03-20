@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpky24iariffe"]
+
+[ext_resource type="Texture2D" uid="uid://c4ceek6n8q7a0" path="res://dino runner asset/obstacles/3 Objects/Stones/2.png" id="1_6s6ed"]
+
+[node name="Stone" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 8)
+scale = Vector2(2, 1.8596492)
+texture = ExtResource("1_6s6ed")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(10, -10, -6, -10, -8, 16, 12, 16)
