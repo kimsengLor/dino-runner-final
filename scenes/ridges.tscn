@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://p7g5o132s6l8"]
 
-[ext_resource type="Texture2D" uid="uid://cgwkqu3griuge" path="res://dino runner asset/obstacles/3 Objects/Ridges/2.png" id="1_q4853"]
+[ext_resource type="Texture2D" uid="uid://cgwkqu3griuge" path="res://assets/obstacles/3 Objects/Ridges/2.png" id="1_q4853"]
 
 [node name="Ridges" type="Area2D"]
 

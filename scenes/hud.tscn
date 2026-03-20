@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwqdoubepkmme"]
 
-[ext_resource type="FontFile" uid="uid://dne5ocf3ifcet" path="res://dino-run-assets/assets/fonts/retro.ttf" id="1_ahhtf"]
+[ext_resource type="FontFile" uid="uid://dne5ocf3ifcet" path="res://assets/fonts/retro.ttf" id="1_ahhtf"]
 
 [node name="HUD" type="CanvasLayer"]
 
