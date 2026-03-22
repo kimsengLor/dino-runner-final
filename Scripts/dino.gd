@@ -1,20 +1,15 @@
 extends CharacterBody2D
 
-const GRAVITY : int = 4200
-const JUMP_SPEED : int = -1800
-
-var was_in_air := false
+const GRAVITY : float = 4200.0
+const JUMP_SPEED : float = -1800.0
+const FAST_FALL_MULTIPLIER : float = 3.0
 
 func _physics_process(delta):
 	# Apply gravity
 	velocity.y += GRAVITY * delta
 
-	var on_floor_now = is_on_floor()
-
-	if on_floor_now:
-		if not get_parent().game_running:
-			pass
-		else:
+	if is_on_floor():
+		if get_parent().game_running:
 			$Runcol.disabled = false
 
 			# Jump
@@ -36,6 +31,6 @@ func _physics_process(delta):
 
 		# Fast fall mechanic
 		if Input.is_action_pressed("ui_down"):
-			velocity.y += (GRAVITY * 3) * delta
+			velocity.y += (GRAVITY * FAST_FALL_MULTIPLIER) * delta
 
 	move_and_slide()

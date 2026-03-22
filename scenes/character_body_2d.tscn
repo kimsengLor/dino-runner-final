@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://5ib1d3gjg2i8" path="res://assets/dinoCharactersVersion1.1/sheets/DinoSprites - doux.png" id="1_f50pn"]
 [ext_resource type="Script" uid="uid://cewxeh50giyl4" path="res://Scripts/dino.gd" id="1_g2brh"]
-[ext_resource type="AudioStream" uid="uid://brtgcjqa14te" path="res://sound/jump.ogg" id="3_dn4c7"]
+[ext_resource type="AudioStream" uid="uid://brtgcjqa14te" path="res://assets/sound/jump.ogg" id="3_dn4c7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
 atlas = ExtResource("1_f50pn")
